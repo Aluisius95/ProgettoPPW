@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>La discografia</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/mappa.png" />
+    <script src="../js/discog.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body id="pg3">
+    <nav>
+      <label for="aprimenu" class="aprimenu">&#9776;</label>
+      <input type="checkbox" id="aprimenu" role="button">
+      <ul class="navbar comportamento">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">Storia</a></li>
+        <li><a class="active" href="discography.html">Discografia</a></li>
+        <li><a href="game.html">Shazam Floyd</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <h3 id="intestazione">
+      In questa pagina puoi conoscere la discografia studio dei Pink Floyd.
+      <br>Prova cliccando sulla copertina di un album e buona lettura!
+    </h3>
+    <div id="mappa">
+      <img id="discografia" src="../images/discografia.jpg" style="max-width:100%" alt="discografia" usemap="#image-map">
+      <map name="image-map">
+        <area id="album1" href="#" alt="piper" title="The Paper at the Gates Down" coords="1,0,48,695" shape="rect" />
+        <area id="album2" href="#" alt="secrets" title="A Saucerful of Secrets" coords="48,-1,94,695" shape="rect" />
+        <area id="album3" href="#" alt="more" title="More" coords="94,1,140,695" shape="rect" />
+        <area id="album4" href="#" alt="ummagumma" title="Ummagumma" coords="140,0,187,695" shape="rect" />
+        <area id="album5" href="#" alt="atom" title="Atom Heart Mother" coords="187,0,234,695" shape="rect" />
+        <area id="album6" href="#" alt="meddle" title="Meddle" coords="234,0,282,695" shape="rect" />
+        <area id="album7" href="#" alt="clouds" title="Obscured by Clouds" coords="280,0,326,695" shape="rect" />
+        <area id="album8" href="#" alt="darkside" title="The Dark Side of the Moon" coords="326,0,372,695" shape="rect" />
+        <area id="album9" href="#" alt="wish" title="Wish You Were Here" coords="372,0,420,695" shape="rect" />
+        <area id="album10" href="#" alt="animals" title="Animals" coords="420,0,466,695" shape="rect" />
+        <area id="album11" href="#" alt="wall" title="The Wall" coords="466,0,513,695" shape="rect" />
+        <area id="album12" href="#" alt="final" title="The Final Cut" coords="513,0,559,695" shape="rect" />
+        <area id="album13" href="#" alt="reason" title="A Momentary Lapse of Reason" coords="559,0,607,695" shape="rect" />
+        <area id="album14" href="#" alt="division" title="The Division Bell" coords="607,0,653,695" shape="rect" />
+        <area id="album15" href="#" alt="endless" title="The Endless River" coords="653,0,699,695" shape="rect" />
+      </map>
+      <div id="album">
+        <button id="chiudi">X</button>
+        <h2 id="titolo"></h2>
+        <h3 id="corpo"></h3>
+      </div>
+    </div>
+  </body>
+</html>

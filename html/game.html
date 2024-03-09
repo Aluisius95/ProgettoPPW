@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>ShazamFloyd - Indovina la canzone</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/mappa.png" />
+    <script src="../js/gioco.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body id="pg4">
+    <nav>
+      <label for="aprimenu" class="aprimenu">&#9776;</label>
+      <input type="checkbox" id="aprimenu" role="button">
+      <ul class="navbar comportamento">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">Storia</a></li>
+        <li><a href="discography.html">Discografia</a></li>
+        <li><a class="active" href="game.html">Shazam Floyd</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div id="domanda">
+        <span id="testoDomanda">
+          Chi vuol essere Pinkfloydiano? Con questo quiz metteremo alla
+          prova le conoscenze acquisite durante il viaggio fatto sinora con i Pink Floyd.
+          Per iniziare, semplicemente clicca "Start", ma ti do un piccolo suggerimento: se vuoi, prima accendi le casse.
+        </span><br>
+
+        <audio id="intro" style="display:none">
+          <source src="../songs/shineon.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="canzone1" style="display:none" controls>
+          <source src="../songs/wishyou.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="canzone2" style="display:none" controls>
+          <source src="../songs/isthere.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="canzone3" style="display:none" controls>
+          <source src="../songs/money.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="canzone4" style="display:none" controls>
+          <source src="../songs/highhopes.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <input type="radio" name="risposte" style="display:none" id="risposta0"/>
+        <span class="risposte" id="testoRisposta0"></span><br>
+        <input type="radio" name="risposte" style="display:none" id="risposta1"/>
+        <span class="risposte" id="testoRisposta1"></span><br>
+        <input type="radio" name="risposte" style="display:none" id="risposta2"/>
+        <span class="risposte" id="testoRisposta2"></span><br>
+        <button class="pulsanti" id="inizia">Start</button>
+        <button class="pulsanti" id="avanti" style="display:none">Avanti</button>
+        <button class="pulsanti" id="ricomincia" style="display:none">Restart</button><br>
+        <span id="risultato"></span><br>
+    </div>
+  </body>
+</html>

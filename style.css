@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rock+Salt&display=swap');
+
+h1, h2, h3, p, .sect, footer{font-family: 'Amatic SC', cursive}
+
+
+/*navbar*/
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(60, 61, 161, 0.8);
+  -webkit-border-bottom-right-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin: -8px;
+  padding: 10px;
+  z-index: 9999;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline-block;
+  position: relative;
+}
+.navbar{
+  z-index: 1;
+  text-align: center;
+}
+.navbar a{
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  cursor: pointer;
+}
+.navbar a.active{
+  font-size: 1.5em}
+.comportamento a:before, .comportamento a:after{
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 1px;
+  content: '';
+  background: white;
+  transition: all 0.25s;
+}
+.comportamento a:before{
+  left: 0px;
+  top: 0px;
+}
+.comportamento a:after{
+  right: 0px;
+  bottom: 0px;
+}
+.comportamento a:hover:before, .comportamento a:hover:after{
+  opacity: 0.5;
+  height: 1px;
+  width: 100%;
+}
+.aprimenu{
+  width: 40%;
+  margin: auto;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: none;
+}
+input[type=checkbox] {display:none}
+input[type=checkbox]:checked ~ .navbar{display:block}
+
+/*homepage*/
+#pg1{
+  background-image: url("images/home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+#testa, #subt{
+  text-align: center;
+  color: lightyellow;
+  text-shadow: 33px 15px 2px rgba(45, 45, 45, 1);
+}
+#testa{
+  font-size: 10em;
+  margin: 18% 0 0;
+}
+#subt{
+  font-size: 4.4em;
+  margin: 2.5% 0 19%;
+}
+.fam{
+  text-align: center;
+  color: black;
+  box-shadow: 3px 3px 12px black;
+  background-color: lightyellow;
+}
+.fam p{
+  padding: 2% 6%;
+  font-size: 2.7em;
+}
+.fam cite{
+  font-size: 30px}
+.dispari{
+  -webkit-border-top-left-radius: 45px;
+  -webkit-border-bottom-right-radius: 55px;
+  -moz-border-radius-topleft: 45px;
+  -moz-border-radius-bottomright: 55px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 55px;
+  width:55%;
+  margin-left: 7%;
+}
+.pari{
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-left-radius: 55px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomleft: 55px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 55px;
+  width:55%;
+  margin-left: 38%;
+}
+.tre{
+  width: 85%;
+  margin-left: 7.9%;
+  -webkit-border-top-left-radius: 40px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-topleft: 40px;
+  -moz-border-radius-bottomright: 50px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 50px;
+}
+.tre p a{
+  color:black;
+  text-decoration: none;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/*storia*/
+#pg2{
+  background-image: url("images/storia.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.contenuto{
+  text-align: justify;
+  background: rgba(192, 192, 192, 0.95);
+  border: 2px inset rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 12px  rgba(60, 61, 161, 0.8);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  font-size: 2.3em;
+  margin: 76% 8% 0;
+}
+.contenuto p{
+  padding: 3% 4%;
+}
+.contenuto p a{
+  font-style: oblique;
+  color: black;
+  text-decoration: none;
+}
+
+/*discografia*/
+#intestazione{
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 2.5em
+}
+#titolo{
+  font-size: 3em;
+  text-shadow: 0px 0px 2px rgba(45, 45, 45, 0.8);
+}
+#corpo{
+  font-size: 2.5em;
+  margin: 0 3%;
+}
+#mappa{
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+#album{
+  background-color: rgba(192, 192, 192, 0.8);
+  box-shadow: 3px 3px 12px  rgba(60, 61, 161, 0.8);
+  border: 2px inset rgba(0, 0, 0, 0.6);
+  -webkit-border-top-left-radius: 45px;
+  -webkit-border-bottom-right-radius: 55px;
+  -moz-border-radius-topleft: 45px;
+  -moz-border-radius-bottomright: 55px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 55px;
+  display: none;
+  position: absolute;
+  margin: 0 12.5%;
+  transform: translate(0%, -102%);
+}
+#chiudi{
+  margin: 2px;
+  float: right;
+  border-style: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/*gioco*/
+#pg4{
+  background-image: url("images/gioco.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+audio{
+  max-width: 100%;
+  width:80%;
+  padding: 10px 0;
+}
+#domanda{
+  background-color: rgba(205, 205, 205, 0.9);
+  border: 2px inset rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 12px  rgba(60, 61, 161, 0.8);
+  -webkit-border-top-left-radius: 45px;
+  -webkit-border-bottom-right-radius: 55px;
+  -moz-border-radius-topleft: 45px;
+  -moz-border-radius-bottomright: 55px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 55px;
+  margin: 10% 5%;
+  padding: 2% 3%;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  position: relative;
+}
+#domanda input{
+  cursor: pointer;
+  text-align: left;
+  padding: 5px;
+}
+#testoDomanda{
+  font-size: 2.5em;
+  text-shadow: 0px 0px 1px rgba(45, 45, 45, 0.8);
+}
+.risposte{font-size: 2em}
+#risultato{font-size: 2.3em}
+.pulsanti{
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
+  color: black;
+  padding: 1% 2%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  background: rgba(60, 61, 161, 0.8);
+  margin-top: 2%;
+}
+.pulsanti:hover{text-decoration: underline}
+
+/*about*/
+.sect h2{font-size: 2.6em}
+.sect p{font-size: 2em;padding: 0 3%;}
+
+.primo{
+  text-align: center;
+  padding: 0 10px;
+}
+.fonti a{color: black}
+
+.iframe-container{
+  position: relative;
+  padding-bottom: 25%;
+  padding-top: 20px;
+  height: 0;
+  width: 40%;
+}
+.iframe-container iframe{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-left: 71%;
+  width: 100%;
+  height: 100%;
+}
+
+.secondo{
+  font-size: 2.3em;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding: 15px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 15px;
+}
+.fa-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  padding: 15px;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+footer{
+  font-size: 1.9em;
+  text-align: center;
+}
+
+/* media queries per il navigatore per due formati*/
+@media screen and (max-width: 779px){
+  .navbar{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    text-align: left;
+    padding: 8px;
+    display: none;
+    z-index: 1;
+  }
+  ul li{display:block}
+  .navbar li, .navbar li a, ul li a{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    border-right:none;
+    text-align: center;
+  }
+  .navbar li{position: static}
+  .navbar li:hover {margin: 0}
+  .navbar li a{
+    font: 0.8em "Rock Salt", cursive;
+    color: white;
+    text-decoration: none;
+  }
+  .aprimenu{display:block}
+}
+
+/*media queries per lo stile delle pagine per vari formati*/
+@media screen and (max-width: 1400px){
+  /*homepage*/
+  #testa{
+    font-size: 8em;
+    margin: 15% 0 0;
+  }
+  #subt{
+    font-size: 4em;
+    margin: 2% 0 19%;
+  }
+  .dispari{
+    width:55%;
+    margin-left: 7%;
+  }
+  .pari{
+    width:55%;
+    margin-left: 38%;
+  }
+  .fam cite{font-size: 30px}
+  .fam p{padding: 2% 6%;font-size: 2em}
+
+  /*storia*/
+  .contenuto{
+    font-size: 1.8em;
+    margin: 84% 4% 0;
+  }
+  .contenuto p{
+    padding: 3% 4%;
+  }
+
+  /*discografia*/
+  #intestazione{font-size: 2.1em}
+  #titolo{font-size: 2.6em}
+  #corpo{
+    font-size: 1.9em;
+    margin: 0 3%;
+  }
+  #album{
+    margin: 0 10%;
+    transform: translate(0%, -130%);
+  }
+
+  /*gioco*/
+  #domanda{margin: 17% 4%}
+  #testoDomanda{font-size: 2em}
+  .risposte{font-size: 1.6em}
+  #risultato{font-size: 1.9em}
+  .pulsanti{font-size: 18px}
+}
+@media screen and (max-width: 1100px){
+  /*homepage*/
+  #testa{
+    font-size: 7em;
+    margin: 19% 0 0;
+  }
+  #subt{
+    font-size: 3.5em;
+    margin: -2% 0 17%;
+  }
+  .dispari, .pari, .tre{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .fam p{
+    padding: 4% 7%;
+    font-size: 2em;
+  }
+  .fam cite{font-size: 24px}
+
+  /*storia*/
+  .contenuto{
+    font-size: 1.8em;
+    margin: 98% 4% 0;
+  }
+  .contenuto p{padding: 3% 4%}
+
+  /*discografia*/
+  #intestazione{font-size: 1.8em}
+  #titolo{font-size: 2.2em}
+  #corpo{
+    font-size: 1.6em;
+    margin: 0 3%;
+  }
+  #album{
+    margin: 0 25px;
+    transform: translate(0%, -110%);
+  }
+
+  /*gioco*/
+  #domanda{
+    margin: 19% 4%;
+  }
+  #testoDomanda{font-size: 2em}
+  .risposte{font-size: 1.6em}
+  #risultato{font-size: 1.9em}
+  .pulsanti{font-size: 15px}
+
+  /*about*/
+  .sect p, .secondo{font-size: 1.6em}
+  .iframe-container{
+    padding-bottom: 30%;
+    padding-top: 21px;
+    width: 50%;
+  }
+  .iframe-container iframe{margin-left: 46%}
+  footer{font-size: 1.2em}
+}
+@media screen and (max-width: 880px){
+  /*homepage*/
+  #testa{
+    font-size: 6em;
+    margin: 50% 0 0;
+  }
+  #subt{
+    font-size: 3em;
+    margin: 1% 0 25%;
+  }
+  .dispari, .pari, .tre{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .fam p{
+    padding: 3% 6%;
+    font-size: 1.6em;
+  }
+  .fam cite{font-size: 20px}
+
+  /*storia*/
+  .contenuto{
+    font-size: 1.5em;
+    margin: 115% 4% 0;
+  }
+  .contenuto p{padding: 3% 4%}
+
+  /*discografia*/
+  #intestazione{font-size: 1.8em}
+  #titolo{font-size: 2.1em}
+  #corpo{
+    font-size: 1.6em;
+    margin: 0 3%;
+  }
+  #album{
+    margin: 0 25px;
+    transform: translate(0%, -110%);
+  }
+
+  /*gioco*/
+  #domanda{
+    margin: 23% 4%;
+  }
+  #testoDomanda{font-size: 2em}
+  .risposte{font-size: 1.6em}
+  #risultato{font-size: 1.9em}
+  .pulsanti{font-size: 13px}
+}
+@media screen and (max-width: 450px){
+  /*homepage*/
+  #testa{
+    font-size: 3em;
+    margin: 50% 0 0;
+  }
+  #subt{
+    font-size: 1.5em;
+    margin: -5% 0 30%;
+  }
+  .dispari, .pari, .tre{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .fam p{padding: 3% 6%;font-size: 1em}
+  .fam cite{font-size: 15px}
+
+  /*storia*/
+  .contenuto{
+    font-size: 1.5em;
+    margin: 130% 4% 0;
+  }
+  .contenuto p{padding: 5% 6%}
+
+  /*discografia*/
+  #intestazione{font-size: 1.8em}
+  #titolo{font-size: 2.1em}
+  #corpo{
+    font-size: 1.6em;
+    margin: 0 3%;
+  }
+  #album{
+    margin: 0 25px;
+    transform: translate(0%, -30%);
+  }
+
+  /*gioco*/
+  #domanda{
+    margin: 23% 4%;
+  }
+  #testoDomanda{font-size: 1.7em}
+  .risposte{font-size: 1.2em}
+  #risultato{font-size: 1.4em}
+
+  /*about*/
+  .iframe-container iframe{margin-left: 42%}
+}
